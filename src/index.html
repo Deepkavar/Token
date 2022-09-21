@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>D054 - Deep TOKEN ICO SALE</title>
+    <!-- Bootstrap -->
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="containerbox">
+        <div class="headTitle">
+          <h1 class="titleText">D054 - Deep TOKEN ICO SALE</h1>
+        </div>
+        <div id="loader">
+          <div class="spinner">
+            <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+          </div>
+          <!-- <p class="LoadingIcon">Loading...</p> -->
+        </div>
+        <div id="content" class="heroSection">
+          <div class="intro"><b>Introducing D054 - Deep TOKEN!</b></div>
+          <div class="tokenPriceBox">
+            Token price : <span class="token-price"></span> Ether.
+          </div>
+          <div class="currrentToken">
+            You currently have <span class="d54-balance"></span>&nbsp; D054.
+          </div>
+
+          <br />
+          <form onSubmit="App.buyTokens(); return false;" role="form">
+            <div class="form-group">
+              <div class="input-group">
+                <input
+                  id="numberOfTokens"
+                  placeholder="Buy Token Here....."
+                  class="formInput"
+                  type="number"
+                  name="number"
+                  value="1"
+                  min="1"
+                  pattern="[0-9]"
+                />
+                <button type="submit" class="btn">Buy Tokens</button>
+              </div>
+            </div>
+          </form>
+          <br />
+          <div class="progress">
+            <div
+              id="progress"
+              class="progress-bar progress-bar-striped active"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            ></div>
+          </div>
+          <p>
+            <span class="tokens-sold"></span> /
+            <span class="tokens-available"></span> tokens sold
+          </p>
+
+          <p id="accountAddress"></p>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
