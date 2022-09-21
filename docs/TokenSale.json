@@ -47,7 +47,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -60,7 +61,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -73,7 +75,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -86,14 +89,16 @@
       "name": "buyTokens",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [],
       "name": "endSale",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract DEEP19IT054\",\"name\":\"_tokenContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenPrice\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_buyer\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"Sell\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_numberOfTokens\",\"type\":\"uint256\"}],\"name\":\"buyTokens\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"endSale\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract DEEP19IT054\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokenPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"tokensSold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/TokenSale.sol\":\"TokenSale\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/DEEP19IT054.sol\":{\"keccak256\":\"0xf6a44d110422f21fc1a92a47dfc709a43f4a1d11b4bb254e96e1d8403df13bdd\",\"urls\":[\"bzz-raw://16c609c23b8b7328d053229a0011a0745eff837e8220ea375f9b8803236b8b6d\",\"dweb:/ipfs/QmckQykTkYBfmjA7hJ8oLNkz4XhVxr2ifB7gF7axiQkGWW\"]},\"project:/contracts/TokenSale.sol\":{\"keccak256\":\"0x42903c9431f0ed10927fd6d32c6874d1ce2cdac4e5fadc9b306d06e1b56d0894\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://c39689dccd6a5ad6e79b3b926e21aa418d66cb53697754b79b7fd0c1e91ce0ab\",\"dweb:/ipfs/QmfPsH5CyEpKrMLoEcuWz6kjd4qrhq3Tx1Sf4GdCY7uzMF\"]}},\"version\":1}",
@@ -6009,21 +6014,16 @@
     "version": "0.8.15+commit.e14f2714.Emscripten.clang"
   },
   "networks": {
-    "5777": {
-      "events": {},
-      "links": {},
-      "address": "0x372311DD9E6009E72d533F56622A125b652a1174",
-      "transactionHash": "0xfc7a1986c09c404ccfeac0be74eaadc1d29a62551004e0b5f13256d529b91a67"
-    },
     "80001": {
       "events": {},
       "links": {},
-      "address": "0x122299792a2f885e6D29DCDEED73B885dA6B6903",
-      "transactionHash": "0x8206940475969b8535157bf02e2b861ee4f50a95b542a3239085c9437bc2178a"
+      "address": "0xD77e41Bb98DfF169c1CE3Df3DFCDbD4FCeCFdbfe",
+      "transactionHash": "0x6b72394fe66bdab7748bb185747a9f7f8103cf96926460e04c5901a90720cf9b"
     }
   },
   "schemaVersion": "3.4.8",
-  "updatedAt": "2022-09-21T09:11:50.093Z",
+  "updatedAt": "2022-09-21T09:28:10.030Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
